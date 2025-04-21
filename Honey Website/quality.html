@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quality</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+    *{
+        margin: 0px;
+    }
+    body{
+        background-image: url(bgimage.png);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    nav{
+        margin: 0;
+        color: white;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        height: 110px;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        left: 0px;
+        letter-spacing: 1px;
+        box-shadow: 0 0 10px rgba(217, 98, 38, 0.82);
+    }
+    #navmove{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        left: 90px;
+    }
+    #topicon{
+        color: #fff;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        display: flex;
+        gap: 60px;
+        font-size: 17px;
+    }
+    #logo1{
+        position: absolute;
+        top: 45px;
+        left: 45px;
+    }
+    hr{
+        background: transparent;
+    }
+    #box3{
+        width: 100%;
+        height: 1400px;
+        /* background-image: url(bgimage.png); */
+        background-size: 100% 100%;
+        position: absolute;
+        
+    }
+    #hbox3{
+        text-align: center;
+        margin: 90px;
+        font-size: 47px;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        
+    }
+    #para3{
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        line-height: 30px;
+        margin-top: -80px;
+    }
+    .imgbox{
+        background-color: #fff;
+        width: 262px;
+        height: 262px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #b3img1{
+        position: absolute;
+        top: 270px;
+        left: 62px;
+    }
+    #b3img2{
+        position: absolute;
+        top: 270px;
+        left: 355px;
+    }
+    #b3img3{
+        position: absolute;
+        top: 270px;
+        left: 648px;
+    }
+    #b3img4{
+        position: absolute;
+        top: 270px;
+        left: 941px;
+    }
+    #b3img5{
+        position: absolute;
+        top: 562px;
+        left: 62px;
+    }
+    #b3img6{
+        position: absolute;
+        top: 562px;
+        left: 355px;
+    }
+    #b3img7{
+        position: absolute;
+        top: 562px;
+        left: 648px;
+    }
+    #b3img8{
+        position: absolute;
+        top: 562px;
+        left: 941px;
+    }
+    #btn3{
+        position: absolute;
+        top: 885px;
+        left: 43%;
+        height: 48px;
+        width: 171px;
+        border: #d96226;
+        border-radius: 30px;
+        background: #d96226;
+        color: white;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        transition: ease-in all 0.5s;
+    }
+    #btn3:hover{
+        background-color: black;
+        color: #fff;
+    }
+    #det{
+        background-image: url(bgimage.png);
+        height: 570px;
+    }
+    .heading{
+        text-align: left;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 24px;
+        padding-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .float{
+        padding-bottom: 11px;
+
+    }
+    #abt{
+        color: #fff;
+        position: relative;
+        top: 1044px;
+        left: 60px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        font-family: 'Poppins', sans-serif;
+    }
+    #addr{
+        position: relative;
+        top: 881px;
+        left: 370px;
+        color: #fff;
+        margin: 0px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        font-family: 'Poppins', sans-serif;
+    }
+    #link{
+        position: relative;
+        top: 671px;
+        left: 670px;
+        color: #fff;
+        margin: 0px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 31px;
+        font-family: 'Poppins', sans-serif;
+    }
+    #news{
+        position: relative;
+        top: 476px;
+        left: 930px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        font-family: 'Poppins', sans-serif;
+    }
+    #inp5{
+        margin: 15px 0px;
+        width: 240px;
+        height: 48px;
+        background: #fff;
+        color: #9e9c9c;
+        font-size: 18px;
+        font-weight: normal;
+        border: inherit;
+        padding: 0 15px;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+    #inp6{
+        margin-bottom: 15px;
+        width: 240px;
+        height: 48px;
+        background: #fff;
+        color: #9e9c9c;
+        font-size: 18px;
+        font-weight: normal;
+        border: inherit;
+        padding: 0 15px;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+    #btn5{
+        margin-bottom: 15px;
+        width: 270px;
+        height: 48px;
+        background: #d96226;
+        color: white;
+        font-size: 18px;
+        font-weight: normal;
+        border: inherit;
+        padding: 0 15px;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+        transition: ease-in all 0.5s;
+    }
+    #btn5:hover{
+        background-color: black;
+        color: #fff;
+    }
+    #foot{
+        position: relative;
+        top: 540px;
+        text-align: center;
+        color: #fff;
+        font-size: 19px;
+        font-family: 'Poppins', sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .textcolor:hover{
+        color: #d96226;
+        transition: all .5s ease-in-out;
+    }
+    #socialmedia{
+        width: 200px;
+        height: 40px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        top: 20px;
+    }
+    #socialmedia>i{
+        background: #fff;
+        width: 33px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4c1d0d;
+        border-radius: 30px;
+        transition: all .5s ease-in-out;
+    }
+    #socialmedia>i:hover{
+        background-color: #d96226;
+        color: white;
+    }
+</style>
+<body>
+    <main>
+        <div id="topicon">
+            <i class="fa fa-user"></i>
+            <i class="fa fa-search"></i>
+        </div>
+        <nav>
+            <img id="logo1" src="logo1.png" alt="logo">
+            <div id="navmove">
+                <a href="index.html"><li class="textcolor" type="none">HOME</li></a>
+                <a href="about.html"><li class="textcolor" type="none">ABOUT</li></a>
+                <a href="shop.html"><li class="textcolor" type="none">SHOP</li></a>
+                <a href="quality.html"><li class="textcolor" type="none">QUALITY</li></a>
+                <a href="contact us.html"><li class="textcolor" type="none">CONTACT US</li></a>
+            </div>
+        </nav>
+        <div id="box3">
+            <h2 id="hbox3">Quality OF Honey For sale</h2>
+            <p id="para3">There are many variations of passages of Lorem Ipsum available, but There are many variations of passages of Lorem Ipsum <br> available, but</p>
+            <div class="imgbox" id="b3img1">
+                <img  src="b3img1.png" alt="honey image" >
+            </div>
+            <div class="imgbox" id="b3img2">
+                <img  src="b3img2.png" alt="honey image" >
+            </div>
+            <div class="imgbox" id="b3img3">
+                <img  src="b3img3.png" alt="honey image" >
+            </div>
+            <siv class="imgbox" id="b3img4">
+                <img  src="b3img4.png" alt="honey image" >
+            </siv>
+            <div class="imgbox" id="b3img5">
+                <img  src="b3img5.png" alt="honey image" >
+            </div>
+            <div class="imgbox" id="b3img6">
+                <img  src="b3img6.png" alt="honey image" >
+            </div>
+            <div class="imgbox" id="b3img7">
+                <img  src="b3img7.png" alt="honey image" >
+            </div>
+            <div class="imgbox" id="b3img8">
+                <img  src="b3img8.png" alt="honey image" >
+            </div> 
+            <button id="btn3">See More</button>
+        </div>
+        <div id="det">
+            <div id="abt">
+                <h1 class="heading">About</h1>
+                <p id="para4">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sedconsectetur</p>
+                <div id="socialmedia">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div id="addr">
+                <h1 class="heading">Address</h1>
+                <li class="float" type="none">Healing Center, oo W Street <br> name, <br> Loram ipusum</li>
+                <li class="float" type="none">(+71) 8522369417 <br> (+71) 8522369417</li>
+                <li class="float" type="none">demo@gmail.com</li>
+            </div>
+            <div id="link">
+                <h1 class="heading">Links</h1>
+                <a href="index.html"><li class="textcolor" type="none">Home</li></a>
+                <a href="about.html"><li class="textcolor" type="none">About</li></a>
+                <a href="shop.html"><li class="textcolor" type="none">Shop</li></a>
+                <a href="quality.html"><li class="textcolor" type="none">Quality</li></a>
+                <a href="contact us.html"><li class="textcolor" type="none">Contact</li></a>
+            </div>
+            <div id="news">
+                <h1 class="heading">Newsletter</h1>
+                <input id="inp5" type="text" name="name" placeholder="Your Name">
+                <br>
+                <input id="inp6" type="email" name="Email" placeholder="Email">
+                <br>
+                <button id="btn5">subscribe</button>
+            </div>
+            <footer id="foot">© 2020 All Rights Reserved. Free html Templates</footer>
+        </div>
+    </main>
+</body>
+</html>
